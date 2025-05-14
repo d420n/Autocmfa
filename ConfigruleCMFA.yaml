@@ -92,7 +92,7 @@ proxy-groups:
       - AKUN3
 
   - name: MIX-X
-    type: fallback
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
