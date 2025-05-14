@@ -68,17 +68,17 @@ proxies:
     server: account.pmang.game.naver.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: ed1bae86-9235-4c3f-b86e-b581d89b5433
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: do-2.tmtunnels.tech
     network: ws
     ws-opts:
-      path: /vmess
+      path: /minacantik
       headers:
-        Host: dor.bist.biz.id
+        Host: do-2.tmtunnels.tech
     udp: true
 
 proxy-groups:
