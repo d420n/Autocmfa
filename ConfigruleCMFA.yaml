@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: AKUN1
+  - name: SG1
     server: ava.game.naver.com
     port: 443
     type: vmess
@@ -48,7 +48,7 @@ proxies:
       headers:
         Host: dor.bist.biz.id
     udp: true
-  - name: AKUN2
+  - name: SG2
     server: df.game.naver.com
     port: 443
     type: vmess
@@ -64,21 +64,85 @@ proxies:
       headers:
         Host: dor.bist.biz.id
     udp: true
-  - name: AKUN3
+  - name: SG3
     server: account.pmang.game.naver.com
     port: 443
     type: vmess
-    uuid: ed1bae86-9235-4c3f-b86e-b581d89b5433
+    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: do-2.tmtunnels.tech
+    servername: dor.bist.biz.id
     network: ws
     ws-opts:
-      path: /minacantik
+      path: /vmess
       headers:
-        Host: do-2.tmtunnels.tech
+        Host: dor.bist.biz.id
+    udp: true
+  - name: SG4
+    server: care.pmang.game.naver.com
+    port: 443
+    type: vmess
+    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dor.bist.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: dor.bist.biz.id
+    udp: true
+  - name: SG5
+    server: investor.fb.com
+    port: 443
+    type: vmess
+    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dor.bist.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: dor.bist.biz.id
+    udp: true
+  - name: SG6
+    server: investor.mt.com
+    port: 443
+    type: vmess
+    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dor.bist.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: dor.bist.biz.id
+    udp: true
+  - name: SG7
+    server: investor.atmeta.com
+    port: 443
+    type: vmess
+    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: dor.bist.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: dor.bist.biz.id
     udp: true
 
 proxy-groups:
@@ -91,19 +155,24 @@ proxy-groups:
       - AKUN2
       - AKUN3
 
-  - name: MIX-X
+  - name: SG-X
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - SG1
+      - SG2
+      - SG3
+      - SG4
+      - SG5
+      - SG6
+      - SG7
+     
       
   - name: IKLAN
     type: select
     proxies:
-     - MIX-X
+     - SG-X
      - REJECT
 
   - name: GAME
@@ -117,15 +186,15 @@ rules:
  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
  - RULE-SET,Block,IKLAN
  - RULE-SET,Game,GAME
- - RULE-SET,Umum,MIX-X
+ - RULE-SET,Umum,SG-X
  - RULE-SET,indo,ID-X
- - RULE-SET,Sosmed,MIX-X
- - RULE-SET,Streaming,MIX-X
+ - RULE-SET,Sosmed,SG-X
+ - RULE-SET,Streaming,SG-X
  - RULE-SET,Bankid,ID-X
- - RULE-SET,Tiktok,MIX-X
- - RULE-SET,Meta,MIX-X
+ - RULE-SET,Tiktok,SG-X
+ - RULE-SET,Meta,SG-X
  - RULE-SET,PortGame,GAME
- - MATCH,MIX-X
+ - MATCH,SG-X
 
 
 rule-providers:
