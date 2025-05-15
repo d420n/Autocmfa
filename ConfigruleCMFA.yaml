@@ -152,7 +152,12 @@ proxy-groups:
     interval: 300
     proxies:
       - SG1
-    
+      - SG2
+      - SG3
+      - SG4
+      - SG5
+      - SG6
+      - SG7
 
   - name: SG-X
     type: load-balance
