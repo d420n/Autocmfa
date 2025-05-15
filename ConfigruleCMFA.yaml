@@ -151,6 +151,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - SG1
     
 
   - name: SG-X
