@@ -182,15 +182,9 @@ proxy-groups:
      - DIRECT
      - REJECT
      
-  - name: AKRAB
-     type: select
-     proxies:
-      -DIRECT
-      -ID-X
 
 rules:
  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
- - RULE-SET,Sosmed,AKRAB
  - RULE-SET,Block,IKLAN
  - RULE-SET,Game,GAME
  - RULE-SET,Umum,SG-X
