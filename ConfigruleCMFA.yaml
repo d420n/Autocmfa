@@ -181,6 +181,7 @@ proxy-groups:
      - ID-X
      - DIRECT
      - REJECT
+     
   - name: AKRAB
      type: select
      proxies:
