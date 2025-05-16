@@ -181,6 +181,12 @@ proxy-groups:
      - ID-X
      - DIRECT
      - REJECT
+
+  - name: Akrab
+    type: select
+    proxies:
+     - DIRECT
+     - REJECT
      
 
 rules:
@@ -189,7 +195,7 @@ rules:
  - RULE-SET,Game,GAME
  - RULE-SET,Umum,SG-X
  - RULE-SET,indo,ID-X
- - RULE-SET,Sosmed,SG-X
+ - RULE-SET,Sosmed,Akrab
  - RULE-SET,Streaming,SG-X
  - RULE-SET,Bankid,ID-X
  - RULE-SET,Tiktok,SG-X
