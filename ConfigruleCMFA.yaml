@@ -36,113 +36,113 @@ proxies:
     server: ava.game.naver.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG2
     server: df.game.naver.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG3
     server: account.pmang.game.naver.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG4
     server: care.pmang.game.naver.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG5
     server: investor.fb.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG6
     server: investor.mt.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
   - name: SG7
     server: investor.atmeta.com
     port: 443
     type: vmess
-    uuid: 6523c535-d167-4cd1-9c7d-7fa8a3620787
+    uuid: e3595bc6-353e-40ad-93f6-3476f1a70968
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: dor.bist.biz.id
+    servername: ubu.420ssh.biz.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: dor.bist.biz.id
+        Host: ubu.420ssh.biz.id
     udp: true
 
 proxy-groups:
